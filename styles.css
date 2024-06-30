@@ -92,6 +92,9 @@ nav .checkbox i {
 .nav__content ul li a:hover {
   color: var(--primary-color-dark);
 }
+.icons img{
+  width: 52px;
+}
 
 .section {
   background-color: var(--extra-light);
