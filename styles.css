@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 :root {
-  --primary-color: #a855f7;
-  --primary-color-dark: #9333ea;
+  --primary-color: #d8617d;
+  --primary-color-dark: #f1a09dff;
   --secondary-color: #ca8a04;
   --text-dark: #1f2937;
   --text-light: #6b7280;
-  --extra-light: #faf5ff;
+  --extra-light: #fffaf5;
   --max-width: 1200px;
 }
 
@@ -95,6 +95,9 @@ nav .checkbox i {
 
 .section {
   background-color: var(--extra-light);
+  background-image: url(/assets/background.svg);
+  background-size: cover;
+  width: 100%;
 }
 
 .section__container {
