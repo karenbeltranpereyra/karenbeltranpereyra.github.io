@@ -155,7 +155,7 @@ nav .checkbox i {
 }
 
 .description,
-.experience-item p,
+.resume-container .experience-item p,
 .amcontent, #resume, #aboutme {
   background-color: var(--extra-extra-light);
   width: 100%;
@@ -168,7 +168,7 @@ nav .checkbox i {
   flex-direction: column;
 }
 
-.experience-item, .education-item{
+.resume-container .experience-item,.resume-container .education-item{
   column-span: 1fr;
   width: 100%;
   display: grid;
@@ -398,7 +398,7 @@ a {
   .amcontent{
     flex-direction: column;
   }
-  #resume{
+  #resume .resume-container{
     grid-template-columns: 1fr;
   }
 }
