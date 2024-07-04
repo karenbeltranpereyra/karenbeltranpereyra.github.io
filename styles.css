@@ -437,6 +437,7 @@ a {
     grid-template-columns: 1fr;
   }
   #container{
+    height: fit-content;
     justify-content: center;
     align-items: center;
     flex-direction: column;
