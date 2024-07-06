@@ -443,4 +443,27 @@ a {
     flex-direction: column;
   }
 }
+#imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.imageWrapper {
+  
+  margin: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper img {
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+}
+
 
