@@ -1,5 +1,5 @@
-// Cargar el archivo previews.json y mostrar las imágenes
-fetch('previews.json')
+
+fetch('../assets/previews.json')
     .then(response => response.json())
     .then(previews => {
         const imageContainer = document.getElementById('imageContainer');
