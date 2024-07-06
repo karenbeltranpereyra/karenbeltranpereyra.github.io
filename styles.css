@@ -182,12 +182,13 @@ nav .checkbox i {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
-#resume h2{
-  
+#resume,#imageContainer h2,h2{
+  width: 100%;
+  text-align: center;
+  padding-top: 3rem;
   column-span: 1fr;
   color: var(--primary-color);
 }
-
 .profile-section {
   display: flex;
   align-content: center;
