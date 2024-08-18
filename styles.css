@@ -361,12 +361,14 @@ a {
 
 .card h3 {
   margin: 10px 0;
+  color: var(--primary-color);
   font-size: 1.2em;
 }
 
 .card p {
   margin: 5px 0;
-  color: #555;
+  color: var(--text-light);
+  text-align: left;
 }
 
 
