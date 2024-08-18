@@ -155,7 +155,7 @@ nav .checkbox i {
 }
 
 .description,
-.resume-container .experience-item p,
+.resume-container .experience-item p, .education-item p,
 .amcontent, #resume, #aboutme {
   background-color: var(--extra-extra-light);
   width: 100%;
@@ -303,7 +303,7 @@ nav .checkbox i {
 }
 
 
-.experience-item ul {
+.experience-item ul, .education-item ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -311,7 +311,7 @@ nav .checkbox i {
   padding-left: '10px';
 }
 
-.experience-item li {
+.experience-item li, .education-item ul {
   width: 100%;
 }
 
