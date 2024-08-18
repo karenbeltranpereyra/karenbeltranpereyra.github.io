@@ -4,6 +4,14 @@ const educationData = [
       "period": "2015 - 2017",
       "degree": "Bachelor's Degree in Communication Sciences",
       "courses": [
+        
+      ]
+    },
+    {
+      "institution": "Featured Courses",
+      "period": "2011 - 2022",
+      "degree": "",
+      "courses": [
         "2022, Online Certification. Digital Disruption: Strategy towards economic activation",
         "2021, Various certifications, courses, talks, debates organized and delivered by colleagues in the Marketing segment",
         "2020, Online Certification. Digital Marketing during the pandemic",
