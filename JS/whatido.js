@@ -21,11 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             title: "Visual and technical",
             content: [
-                "Experience with Windows and Mac",
-                "Working knowledge of HTML and CSS",
-                "Adobe CC (Photoshop, Illustrator, InDesign and Dreamweaver)",
-                "Wireframes: Axure / Balsamiq",
-                "Microsoft Office"
+                "Operating Systems: MACOSX, Windows",
+                "Productivity: Office Suite,  Asana, Monday",
+                "Analisys and Digital Marketing: Google Analytics, Kissmetrics, MailChimp, FB Bussines",
             ],
             imageUrl: "assets/tablet.svg"
         }
