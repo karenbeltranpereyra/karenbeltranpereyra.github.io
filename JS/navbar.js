@@ -25,8 +25,13 @@ function generateNavbar(language = 'es') {
         const newLanguage = language === 'en' ? 'es' : 'en';
         generateNavbar(newLanguage);
     });
-}
 
+    document.querySelectorAll('.nav__content ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('check').checked = false;
+        });
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     generateNavbar();
