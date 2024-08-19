@@ -86,7 +86,7 @@ const experienceData = {
     {
       "company": "BNN – THE DIGITAL PARTNER",
       "period": "2022 - PRESENTE",
-      "position": "GERENTE DE PROYECTOS",
+      "position": "PROJECT MANAGER",
       "activities": [
         "Coordinación de actividades de medios",
         "Comunicación interna",
@@ -103,7 +103,7 @@ const experienceData = {
     {
       "company": "COCO MARKETING",
       "period": "2019-2022",
-      "position": "EJECUTIVO DE CUENTAS | GERENTE DE PROYECTOS",
+      "position": "EJECUTIVO DE CUENTAS | PROJECT MANAGER",
       "activities": [
         "Gestión de proyectos premium",
         "Contención en redes sociales",
@@ -123,7 +123,7 @@ const experienceData = {
     {
       "company": "LATENTE STUDIO",
       "period": "2019",
-      "position": "EJECUTIVO DE CUENTAS | GERENTE DE PROYECTOS",
+      "position": "EJECUTIVO DE CUENTAS | PROJECT MANAGER",
       "activities": [
         "Estrategia de posicionamiento en medios y redes sociales",
         "Coordinación de actividades de medios y publicidad",
