@@ -169,9 +169,11 @@ const experienceData = {
 
 function generateExperienceHTML(language = 'es') {
   const container = document.getElementById('experience');
-  container.innerHTML = '';
+  container.innerHTML = ''; 
 
   const data = experienceData[language];
+
+  const isSmallScreen = window.matchMedia('(max-width: 750px)').matches;
 
   data.forEach(item => {
     const section = document.createElement('section');
@@ -198,6 +200,14 @@ function generateExperienceHTML(language = 'es') {
     section.appendChild(position);
     section.appendChild(activities);
     container.appendChild(section);
+
+    activities.style.display = isSmallScreen ? 'none' : 'block';
+
+    section.addEventListener('click', () => {
+      if (isSmallScreen) {
+        activities.style.display = activities.style.display === 'none' ? 'block' : 'none';
+      }
+    });
   });
 }
 
@@ -209,5 +219,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const newLanguage = event.target.textContent === 'Español' ? 'es' : 'en';
       generateExperienceHTML(newLanguage);
     }
+  });
+
+  window.addEventListener('resize', () => {
+    generateExperienceHTML(); 
   });
 });

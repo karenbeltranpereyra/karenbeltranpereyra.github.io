@@ -37,7 +37,7 @@ const educationData = {
         "2022, Certificación Online. Disrupción Digital: Estrategia hacia la activación económica",
         "2021, Varias certificaciones, cursos, charlas, debates organizados y realizados por colegas en el segmento de Marketing",
         "2020, Certificación Online. Marketing Digital durante la pandemia",
-        "2019, Comenzó a tomar certificaciones Blueprint, en curso",
+        "2019, Comencé a tomar certificaciones Blueprint, en curso",
         "2018, ESDI - Estrategias de Contenidos Digitales",
         "2015-2016, UIC - Diplomado en Marketing Digital y Redes Sociales",
         "2013, IEBG - Diplomado en Community Management",
@@ -52,6 +52,8 @@ function generateEducationHTML(language = 'es') {
   container.innerHTML = ''; 
 
   const data = educationData[language];
+
+  const isSmallScreen = window.matchMedia('(max-width: 750px)').matches;
 
   data.forEach(item => {
     const section = document.createElement('section');
@@ -78,6 +80,15 @@ function generateEducationHTML(language = 'es') {
     section.appendChild(degree);
     section.appendChild(courses);
     container.appendChild(section);
+
+    courses.style.display = isSmallScreen ? 'none' : 'block';
+
+    section.addEventListener('click', () => {
+      if (isSmallScreen) {
+        courses.style.display = courses.style.display === 'none' ? 'block' : 'none';
+      }
+    });
+
   });
 }
 
@@ -89,5 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const newLanguage = event.target.textContent === 'Español' ? 'es' : 'en';
       generateEducationHTML(newLanguage);
     }
+  });
+
+  window.addEventListener('resize', () => {
+    generateExperienceHTML(); 
   });
 });
