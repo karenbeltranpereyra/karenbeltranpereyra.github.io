@@ -1,20 +1,30 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const data = [
+const data = {
+    en: [
         {
             title: "Strategy development",
             content: [
-                "Establish and maintain solid client relationships.",
-                "Analyze clients’ needs and expectations to establish strategic recommendations and budget proposals.",
-                "Counsel in UX/UI design, content structure and technical solutions"
+                "Team Leadership: Creative, UX, IT, Infrastructure, Social, Production",
+                "Project Management",
+                "Project Planning",
+                "Resource Management and Allocation",
+                "Development and Monitoring of Timelines",
+                "Budgeting",
+                "Project Budget Control and Management",
+                "Simultaneous Project Management",
+                "Client Communication",
+                "Analytical Skills",
+                "Negotiation Skills"
             ],
             imageUrl: "assets/computer.svg"
         },
         {
             title: "Digital production",
             content: [
-                "Branded website, e-commerce website for multidevices (website restructuring and redesigning, webmastering and TMA)",
-                "Activation campaign: event mini-site, social media mechanism, mobile app, promotional communication tools...",
-                "Brand content: motion production, photography, story-telling"
+                "Management of Large-Scale Productions and Small Productions",
+                "Management of Website Improvements and/or Development",
+                "Management of Social Media Content Development for Brands (Instagram, Facebook, TikTok, YouTube, LinkedIn)",
+                "Management of App Development",
+                "Management and Organization of In-Person Event Coverage"
             ],
             imageUrl: "assets/play.svg"
         },
@@ -22,16 +32,58 @@ document.addEventListener("DOMContentLoaded", function() {
             title: "Visual and technical",
             content: [
                 "Operating Systems: MACOSX, Windows",
-                "Productivity: Office Suite,  Asana, Monday",
-                "Analisys and Digital Marketing: Google Analytics, Kissmetrics, MailChimp, FB Bussines",
+                "Productivity: Office Suite, Asana, Monday, Trello, Jira, Microsoft Teams, Airtable, Notion",
+                "Analysis and Digital Marketing: Google Analytics, Kissmetrics, MailChimp, FB Business"
             ],
             imageUrl: "assets/tablet.svg"
         }
-    ];
+    ],
+    es: [
+        {
+            title: "Desarrollo de estrategia",
+            content: [
+                "Liderazgo de equipos: Creativo, UX, TI, Infraestructura, Social, Producción",
+                "Gestión de proyectos",
+                "Planificación de proyectos",
+                "Gestión y asignación de recursos",
+                "Desarrollo y seguimiento de cronogramas",
+                "Presupuestación",
+                "Control y gestión del presupuesto del proyecto",
+                "Gestión de proyectos simultáneos",
+                "Comunicación con el cliente",
+                "Capacidad de análisis",
+                "Capacidad de negociación"
+            ],
+            imageUrl: "assets/computer.svg"
+        },
+        {
+            title: "Producción digital",
+            content: [
+                "Gestión de grandes y pequeñas producciones",
+                "Gestión de mejoras y/o desarrollo de sitios web",
+                "Gestión del desarrollo de contenido para redes sociales para marcas (Instagram, Facebook, TikTok, YouTube, LinkedIn)",
+                "Gestión del desarrollo de aplicaciones",
+                "Gestión y organización de coberturas de eventos presenciales"
+            ],
+            imageUrl: "assets/play.svg"
+        },
+        {
+            title: "Visual y técnico",
+            content: [
+                "Sistemas Operativos: MACOSX, Windows",
+                "Productividad: Office Suite, Asana, Monday, Trello, Jira, Microsoft Teams, Airtable, Notion",
+                "Análisis y Marketing Digital: Google Analytics, Kissmetrics, MailChimp, FB Business"
+            ],
+            imageUrl: "assets/tablet.svg"
+        }
+    ]
+};
 
+function generateCardsHTML(language = 'es') {
     const container = document.getElementById('container');
-
-    data.forEach(item => {
+    container.innerHTML = '';
+    const selectedData = data[language];
+    selectedData.forEach(item => {
         const card = document.createElement('div');
         card.classList.add('card');
 
@@ -54,5 +106,17 @@ document.addEventListener("DOMContentLoaded", function() {
         card.appendChild(content);
 
         container.appendChild(card);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    generateCardsHTML();
+
+
+    document.getElementById('navbar-container').addEventListener('click', (event) => {
+        if (event.target.id === 'language-toggle') {
+            const newLanguage = event.target.textContent === 'Español' ? 'es' : 'en';
+            generateCardsHTML(newLanguage);
+        }
     });
 });

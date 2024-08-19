@@ -1,4 +1,5 @@
-const experienceData = [
+const experienceData = {
+  en: [
     {
       "company": "BNN – THE DIGITAL PARTNER",
       "period": "2022 - PRESENT",
@@ -80,39 +81,133 @@ const experienceData = [
         "Management and direction of online broadcasts"
       ]
     }
-  ];
-  
+  ],
+  es: [
+    {
+      "company": "BNN – THE DIGITAL PARTNER",
+      "period": "2022 - PRESENTE",
+      "position": "GERENTE DE PROYECTOS",
+      "activities": [
+        "Coordinación de actividades de medios",
+        "Comunicación interna",
+        "Organización de proyectos",
+        "Especificar la calidad de cada parte entregable",
+        "Estimación de recursos y tiempos necesarios",
+        "Desarrollar e implementar un plan y procesos para el proyecto",
+        "Gestión de riesgos, problemas y cambios en el proyecto",
+        "Monitorear el progreso y los procesos",
+        "Mantener comunicación continua con las partes interesadas",
+        "Gestión de proveedores"
+      ]
+    },
+    {
+      "company": "COCO MARKETING",
+      "period": "2019-2022",
+      "position": "EJECUTIVO DE CUENTAS | GERENTE DE PROYECTOS",
+      "activities": [
+        "Gestión de proyectos premium",
+        "Contención en redes sociales",
+        "Supervisión de contenido",
+        "Corrección de estilo",
+        "Planes de comunicación y estrategias, así como participación en su desarrollo",
+        "Gestión de grabación y edición",
+        "Gestión y seguimiento del desarrollo de sitios web (pequeños, medianos y grandes)",
+        "Gestión de campañas de correo electrónico y participación en el proceso",
+        "Interacción directa con el cliente",
+        "Organización y supervisión del equipo interno de la agencia",
+        "Supervisión y activación de campañas en redes sociales (Facebook Ads, Google AdWords)",
+        "Toma de decisiones, esquemas de tareas, cronograma con el cliente, equipo interno y implementación de soluciones",
+        "Desarrollo de informes y análisis de métricas mensuales o de proyectos"
+      ]
+    },
+    {
+      "company": "LATENTE STUDIO",
+      "period": "2019",
+      "position": "EJECUTIVO DE CUENTAS | GERENTE DE PROYECTOS",
+      "activities": [
+        "Estrategia de posicionamiento en medios y redes sociales",
+        "Coordinación de actividades de medios y publicidad",
+        "Comunicación interna: redacción de textos, corrección de estilo, diseño de contenido",
+        "Organización de eventos (conferencias, talleres, presentaciones, etc.)",
+        "Estrategia y actualizaciones en redes sociales: AdWords y Google Analytics",
+        "Diseño y publicación de anuncios",
+        "Relaciones públicas",
+        "Organización y dirección de sesiones fotográficas"
+      ]
+    },
+    {
+      "company": "PAUTA CREATIVA AGENCIA DE MARKETING",
+      "period": "2018-2019",
+      "position": "COMMUNITY MANAGER",
+      "activities": [
+        "Estrategia de posicionamiento en medios y redes sociales",
+        "Coordinación de actividades de medios y publicidad",
+        "Comunicación interna: redacción de textos, corrección de estilo, diseño de contenido",
+        "Organización de eventos (conferencias, talleres, presentaciones, etc.)",
+        "Estrategia y actualizaciones en redes sociales: AdWords y Google Analytics",
+        "Diseño y publicación de anuncios",
+        "Relaciones públicas",
+        "Organización y dirección de sesiones fotográficas"
+      ]
+    },
+    {
+      "company": "ROEL COMERCIALIZADORA",
+      "period": "2015-2017",
+      "position": "COMMUNITY MANAGER",
+      "activities": [
+        "Gestión de cuentas para marcas como Canson, Cretacolor, Milan, Acrilex, Pintart, Estambres Circulo, Indart, Condor",
+        "Seguimiento al cliente",
+        "Creación y monitoreo de campañas publicitarias",
+        "Contención en redes sociales",
+        "Generación de reportes",
+        "Grabación de video para contenido",
+        "Gestión y dirección de transmisiones en línea"
+      ]
+    }
+  ]
+};
 
-  function generateExperienceHTML(data) {
-    const container = document.getElementById('experience');
-    data.forEach(item => {
-      const section = document.createElement('section');
-      section.classList.add('experience-item');
+function generateExperienceHTML(language = 'es') {
+  const container = document.getElementById('experience');
+  container.innerHTML = '';
 
-      const company = document.createElement('h3');
-      company.textContent = item.company;
+  const data = experienceData[language];
 
-      const period = document.createElement('p');
-      period.textContent = item.period;
+  data.forEach(item => {
+    const section = document.createElement('section');
+    section.classList.add('experience-item');
 
-      const position = document.createElement('p');
-      position.textContent = `Position: ${item.position}`;
+    const company = document.createElement('h3');
+    company.textContent = item.company;
 
-      const activities = document.createElement('ul');
-      item.activities.forEach(activity => {
-        const li = document.createElement('li');
-        li.textContent = activity;
-        activities.appendChild(li);
-      });
+    const period = document.createElement('p');
+    period.textContent = item.period;
 
-      section.appendChild(company);
-      section.appendChild(period);
-      section.appendChild(position);
-      section.appendChild(activities);
-      container.appendChild(section);
+    const position = document.createElement('p');
+    position.textContent = `${language === 'en' ? 'Position' : 'Puesto'}: ${item.position}`;
+
+    const activities = document.createElement('ul');
+    item.activities.forEach(activity => {
+      const li = document.createElement('li');
+      li.textContent = activity;
+      activities.appendChild(li);
     });
-  }
 
-  document.addEventListener('DOMContentLoaded', () => {
-    generateExperienceHTML(experienceData);
+    section.appendChild(company);
+    section.appendChild(period);
+    section.appendChild(position);
+    section.appendChild(activities);
+    container.appendChild(section);
   });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  generateExperienceHTML(); 
+
+  document.getElementById('navbar-container').addEventListener('click', (event) => {
+    if (event.target.id === 'language-toggle') {
+      const newLanguage = event.target.textContent === 'Español' ? 'es' : 'en';
+      generateExperienceHTML(newLanguage);
+    }
+  });
+});

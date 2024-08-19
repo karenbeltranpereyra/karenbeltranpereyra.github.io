@@ -1,11 +1,10 @@
-const educationData = [
+const educationData = {
+  en: [
     {
       "institution": "UDF, Campus Condesa",
       "period": "2015 - 2017",
       "degree": "Bachelor's Degree in Communication Sciences",
-      "courses": [
-        
-      ]
+      "courses": []
     },
     {
       "institution": "Featured Courses",
@@ -22,39 +21,73 @@ const educationData = [
         "2011-2012, LCD - Diploma in Community Management"
       ]
     }
-  ];
-  
-  function generateEducationHTML(data) {
-    const container = document.getElementById('education');
-    data.forEach(item => {
-      const section = document.createElement('section');
-      section.classList.add('education-item');
-  
-      const institution = document.createElement('h3');
-      institution.textContent = item.institution;
-  
-      const period = document.createElement('p');
-      period.textContent = item.period;
-  
-      const degree = document.createElement('p');
-      degree.textContent = item.degree;
-  
-      const courses = document.createElement('ul');
-      item.courses.forEach(course => {
-        const li = document.createElement('li');
-        li.textContent = course;
-        courses.appendChild(li);
-      });
-  
-      section.appendChild(institution);
-      section.appendChild(period);
-      section.appendChild(degree);
-      section.appendChild(courses);
-      container.appendChild(section);
+  ],
+  es: [
+    {
+      "institution": "UDF, Campus Condesa",
+      "period": "2015 - 2017",
+      "degree": "Licenciatura en Ciencias de la Comunicación",
+      "courses": []
+    },
+    {
+      "institution": "Cursos Destacados",
+      "period": "2011 - 2022",
+      "degree": "",
+      "courses": [
+        "2022, Certificación Online. Disrupción Digital: Estrategia hacia la activación económica",
+        "2021, Varias certificaciones, cursos, charlas, debates organizados y realizados por colegas en el segmento de Marketing",
+        "2020, Certificación Online. Marketing Digital durante la pandemia",
+        "2019, Comenzó a tomar certificaciones Blueprint, en curso",
+        "2018, ESDI - Estrategias de Contenidos Digitales",
+        "2015-2016, UIC - Diplomado en Marketing Digital y Redes Sociales",
+        "2013, IEBG - Diplomado en Community Management",
+        "2011-2012, LCD - Diplomado en Community Management"
+      ]
+    }
+  ]
+};
+
+function generateEducationHTML(language = 'es') {
+  const container = document.getElementById('education');
+  container.innerHTML = ''; 
+
+  const data = educationData[language];
+
+  data.forEach(item => {
+    const section = document.createElement('section');
+    section.classList.add('education-item');
+
+    const institution = document.createElement('h3');
+    institution.textContent = item.institution;
+
+    const period = document.createElement('p');
+    period.textContent = item.period;
+
+    const degree = document.createElement('p');
+    degree.textContent = item.degree;
+
+    const courses = document.createElement('ul');
+    item.courses.forEach(course => {
+      const li = document.createElement('li');
+      li.textContent = course;
+      courses.appendChild(li);
     });
-  }
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    generateEducationHTML(educationData);
+
+    section.appendChild(institution);
+    section.appendChild(period);
+    section.appendChild(degree);
+    section.appendChild(courses);
+    container.appendChild(section);
   });
-  
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  generateEducationHTML(); 
+
+  document.getElementById('navbar-container').addEventListener('click', (event) => {
+    if (event.target.id === 'language-toggle') {
+      const newLanguage = event.target.textContent === 'Español' ? 'es' : 'en';
+      generateEducationHTML(newLanguage);
+    }
+  });
+});
