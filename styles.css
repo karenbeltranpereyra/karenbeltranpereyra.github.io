@@ -307,7 +307,7 @@ nav .checkbox i {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  padding-left: '10px';
+  padding-left: 10px;
 }
 
 .experience-item li, .education-item ul {
@@ -376,7 +376,7 @@ a {
     display: block;
   }
 
-  ul {
+  nav ul {
     position: absolute;
     width: 100%;
     height: calc(100vh - 85px);
