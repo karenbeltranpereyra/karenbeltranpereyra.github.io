@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('navbar-container').addEventListener('click', (event) => {
     if (event.target.id === 'language-toggle') {
-      const newLanguage = event.target.textContent === 'Español' ? 'en' : 'es';
+      const newLanguage = event.target.textContent === 'Español' ? 'es' : 'en';
       generateExperienceHTML(newLanguage);
     }
   });
