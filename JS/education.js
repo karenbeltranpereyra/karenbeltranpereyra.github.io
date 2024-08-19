@@ -103,6 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   window.addEventListener('resize', () => {
-    generateExperienceHTML(); 
+    generateEducationHTML(); 
   });
 });
