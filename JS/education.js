@@ -113,18 +113,5 @@ document.addEventListener('DOMContentLoaded', () => {
       generateEducationHTML(newLanguage);
     }
   });
-
-  let lastWidth = window.innerWidth;
-
-  window.addEventListener('resize', () => {
-    const currentWidth = window.innerWidth;
-
-    // Solo ejecuta si el cambio cruza el umbral de 750px
-    if ((lastWidth > 750 && currentWidth <= 750) || (lastWidth <= 750 && currentWidth > 750)) {
-      generateEducationHTML();
-    }
-
-    lastWidth = currentWidth;
-  });
 });
 
