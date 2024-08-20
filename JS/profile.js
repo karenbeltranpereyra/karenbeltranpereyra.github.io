@@ -5,7 +5,7 @@ function generateProfileSection(language = 'es') {
         en: {
             title: "Short facts about me",
             loving: "LOVING",
-            lovingText: "Organizing and coordinating.<br>Nature, romantic movies,<br>The night sky, walking barefoot, tattoos<br>Dancing and roller skating.",
+            lovingText: "Skating, listening to music, nature, traveling, dancing, and dedicating time to the important things and people in my life.",
             socialProfiles: "SOCIAL PROFILES",
             skills: "SKILLS",
             contact: "CONTACT",
@@ -19,8 +19,8 @@ function generateProfileSection(language = 'es') {
         },
         es: {
             title: "Datos breves sobre mí",
-            loving: "AMO",
-            lovingText: "Organizar y coordinar.<br>La naturaleza, las películas románticas,<br>El cielo nocturno, caminar descalza, los tatuajes<br>Bailar y patinar.",
+            loving: "ME GUSTA",
+            lovingText: "Patinar, escuchar música, la naturaleza, viajar, bailar y dedicarle tiempo a las cosas y personas importantes en mi vida",
             socialProfiles: "REDES SOCIALES",
             skills: "HABILIDADES",
             contact: "CONTACTO",
