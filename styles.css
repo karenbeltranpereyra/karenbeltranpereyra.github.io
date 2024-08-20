@@ -414,7 +414,7 @@ a {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   header nav a {
     display: block;
     margin: 5px 0;
@@ -468,5 +468,7 @@ a {
   max-width: 130px;
   height: auto;
 }
+
+
 
 
