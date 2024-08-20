@@ -201,11 +201,22 @@ function generateExperienceHTML(language = 'es') {
     section.appendChild(activities);
     container.appendChild(section);
 
-    activities.style.display = isSmallScreen ? 'none' : 'block';
+    const toggleDiv = document.createElement('div');
+    toggleDiv.classList.add('toggle-arrow');
+    toggleDiv.innerHTML = '▼';
 
-    section.addEventListener('click', () => {
-      if (isSmallScreen) {
-        activities.style.display = activities.style.display === 'none' ? 'block' : 'none';
+    section.appendChild(toggleDiv);
+
+    activities.style.display = isSmallScreen ? 'none' : 'block';
+    toggleDiv.style.display = isSmallScreen && item.activities[0] ? 'block' : 'none';
+
+    toggleDiv.addEventListener('click', () => {
+      if (activities.style.display === 'none') {
+        activities.style.display = 'block';
+        toggleDiv.innerHTML = '▲'; 
+      } else {
+        activities.style.display = 'none';
+        toggleDiv.innerHTML = '▼'; 
       }
     });
   });

@@ -52,7 +52,6 @@ function generateEducationHTML(language = 'es') {
   container.innerHTML = ''; 
 
   const data = educationData[language];
-
   const isSmallScreen = window.matchMedia('(max-width: 750px)').matches;
 
   data.forEach(item => {
@@ -81,11 +80,24 @@ function generateEducationHTML(language = 'es') {
     section.appendChild(courses);
     container.appendChild(section);
 
-    courses.style.display = isSmallScreen ? 'none' : 'block';
+    
+    const toggleDiv = document.createElement('div');
+    toggleDiv.classList.add('toggle-arrow');
+    toggleDiv.innerHTML = '▼'; 
 
-    section.addEventListener('click', () => {
-      if (isSmallScreen) {
-        courses.style.display = courses.style.display === 'none' ? 'block' : 'none';
+    section.appendChild(toggleDiv);
+
+    
+    courses.style.display = isSmallScreen ? 'none' : 'block';
+    toggleDiv.style.display = isSmallScreen && item.courses[0] ? 'block' : 'none';
+
+    toggleDiv.addEventListener('click', () => {
+      if (courses.style.display === 'none') {
+        courses.style.display = 'block';
+        toggleDiv.innerHTML = '▲'; 
+      } else {
+        courses.style.display = 'none';
+        toggleDiv.innerHTML = '▼'; 
       }
     });
 
@@ -106,3 +118,4 @@ document.addEventListener('DOMContentLoaded', () => {
     generateEducationHTML(); 
   });
 });
+

@@ -3,17 +3,11 @@ const data = {
         {
             title: "Strategy development",
             content: [
-                "Team Leadership: Creative, UX, IT, Infrastructure, Social, Production",
-                "Project Management",
-                "Project Planning",
-                "Resource Management and Allocation",
-                "Development and Monitoring of Timelines",
-                "Budgeting",
-                "Project Budget Control and Management",
-                "Simultaneous Project Management",
-                "Client Communication",
-                "Analytical Skills",
-                "Negotiation Skills"
+                "Leadership of multidisciplinary teams: Creative, UX, IT, Infrastructure, Social, Production",
+                "Comprehensive project management and planning",
+                "Efficient resource allocation and timeline monitoring",
+                "Budget control and financial management of projects",
+                "Effective communication and negotiation with clients and stakeholders"
             ],
             imageUrl: "assets/computer.svg"
         },
@@ -42,17 +36,11 @@ const data = {
         {
             title: "Desarrollo de estrategia",
             content: [
-                "Liderazgo de equipos: Creativo, UX, TI, Infraestructura, Social, Producción",
-                "Gestión de proyectos",
-                "Planificación de proyectos",
-                "Gestión y asignación de recursos",
-                "Desarrollo y seguimiento de cronogramas",
-                "Presupuestación",
-                "Control y gestión del presupuesto del proyecto",
-                "Gestión de proyectos simultáneos",
-                "Comunicación con el cliente",
-                "Capacidad de análisis",
-                "Capacidad de negociación"
+                "Liderazgo de equipos multidisciplinarios: Creativo, UX, TI, Infraestructura, Social, Producción",
+                "Gestión y planificación integral de proyectos",
+                "Asignación eficiente de recursos y seguimiento de cronogramas",
+                "Control de presupuestos y gestión financiera de proyectos",
+                "Comunicación efectiva y negociación con clientes y stakeholders"
             ],
             imageUrl: "assets/computer.svg"
         },
@@ -99,6 +87,8 @@ function generateCardsHTML(language = 'es') {
             const p = document.createElement('p');
             p.textContent = text;
             content.appendChild(p);
+            const br = document.createElement('br');
+            content.appendChild(br);
         });
 
         card.appendChild(img);
