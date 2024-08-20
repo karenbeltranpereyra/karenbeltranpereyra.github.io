@@ -169,7 +169,7 @@ const experienceData = {
 
 function generateExperienceHTML(language = 'es') {
   const container = document.getElementById('experience');
-  container.innerHTML = ''; 
+  container.innerHTML = '';
 
   const data = experienceData[language];
 
@@ -213,17 +213,17 @@ function generateExperienceHTML(language = 'es') {
     toggleDiv.addEventListener('click', () => {
       if (activities.style.display === 'none') {
         activities.style.display = 'block';
-        toggleDiv.innerHTML = '▲'; 
+        toggleDiv.innerHTML = '▲';
       } else {
         activities.style.display = 'none';
-        toggleDiv.innerHTML = '▼'; 
+        toggleDiv.innerHTML = '▼';
       }
     });
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  generateExperienceHTML(); 
+  generateExperienceHTML();
 
   document.getElementById('navbar-container').addEventListener('click', (event) => {
     if (event.target.id === 'language-toggle') {
@@ -232,7 +232,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  let lastWidth = window.innerWidth;
+
   window.addEventListener('resize', () => {
-    generateExperienceHTML(); 
+    const currentWidth = window.innerWidth;
+
+    // Solo ejecuta si el cambio cruza el umbral de 750px
+    if ((lastWidth > 750 && currentWidth <= 750) || (lastWidth <= 750 && currentWidth > 750)) {
+      generateExperienceHTML();
+    }
+
+    lastWidth = currentWidth;
   });
+
 });
