@@ -155,7 +155,7 @@ nav .checkbox i {
 
 .description,
 .resume-container .experience-item p, .education-item p,
-.amcontent, #resume, #aboutme,#ti-and-rss {
+.amcontent, #resume, #aboutme,#portfolio {
   background-color: var(--extra-extra-light);
   width: 100%;
   line-height: 1.5rem;
@@ -163,8 +163,10 @@ nav .checkbox i {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   flex-direction: column;
+}
+.portfolio-container h2{
+  margin-bottom: 10px;
 }
 
 .resume-container .experience-item,.resume-container .education-item{
