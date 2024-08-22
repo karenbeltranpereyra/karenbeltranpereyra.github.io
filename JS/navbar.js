@@ -13,7 +13,7 @@ function generateNavbar(language = 'es') {
                     <li><a href="#home">${language === 'en' ? 'Home' : 'Inicio'}</a></li>
                     <li><a href="#aboutme">${language === 'en' ? 'About Me' : 'Acerca de mi'}</a></li>
                     <li><a href="#happyclients">${language === 'en' ? 'Clients' : 'Clientes'}</a></li>
-                    <li><a href="#ti-and-rss">${language === 'en' ? 'Portfolio' : 'Portafolio'}</a></li>
+                    <li><a href="#portfolio">${language === 'en' ? 'Portfolio' : 'Portafolio'}</a></li>
                     <li><a href="#resume">${language === 'en' ? 'Resume' : 'Currículum'}</a></li>
                     <li><a href="#" id="language-toggle">${language === 'en' ? 'Español' : 'English'}</a></li>
                 </ul>

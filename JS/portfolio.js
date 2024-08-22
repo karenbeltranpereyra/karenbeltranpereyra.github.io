@@ -76,7 +76,7 @@ const tiAndRssData = {
   }
     ,
     {
-      title: "RSS",
+      title: "Redes Sociales",
       description: "De las siguientes marcas llevé la gestión, coordinación, asignación de recursos, control de presupuestos, seguimientos de cronogramas, visibilidad a ejecutivo de cuenta para la creación de contenidos de todas sus redes sociales, gestionando también altas producciones, mini producciones, coberturas de eventos y festivales, desarrollo de materiales de principio a fin para cada red, apegandome a una estrategia enfocada a ciertos objetivos y resultados de acuerdo la marca.",
       sections: [
         {
@@ -252,7 +252,7 @@ const tiAndRssData = {
       ]
     },
     {
-      title: "RSS",
+      title: "Social Media",
       description: "I managed the planning, coordination, resource allocation, budget control, timeline tracking, and provided visibility to the account executive for content creation across all social media channels of the following brands. Additionally, I handled large-scale productions, mini-productions, event and festival coverage, and developed materials from start to finish for each platform, adhering to a strategy focused on specific objectives and brand-aligned results.",
       sections: [
         {
@@ -355,7 +355,7 @@ const tiAndRssData = {
 
 
 function generateTiAndRssHTML(language = 'es') {
-  const container = document.getElementById('ti-and-rss');
+  const container = document.getElementById('portfolio');
   container.innerHTML = '';
 
   const data = tiAndRssData[language];
