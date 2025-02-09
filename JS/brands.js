@@ -1,7 +1,7 @@
 const previews = [
   {
     "file": "Kueski",
-    "preview": "assets/brands/Kuesky.png"
+    "preview": "assets/brands/Kueski.png"
   },
   {
     "file": "Oxxo",
