@@ -1,5 +1,9 @@
 const previews = [
   {
+    "file": "Kueski",
+    "preview": "assets/brands/Kuesky.png"
+  },
+  {
     "file": "Oxxo",
     "preview": "assets/brands/Oxxo.png"
   },
