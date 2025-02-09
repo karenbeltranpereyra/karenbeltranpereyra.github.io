@@ -1,8 +1,29 @@
 const experienceData = {
   en: [
     {
+  "company": "TEKNE",
+  "period": "2024-2025",
+  "position": "PROJECT MANAGER",
+  "activities": [
+    "Communication with stakeholders",
+    "Development of task plans, including scope, goals, deliverables, timelines, and budgets",
+    "Coordinate and manage resources for each project",
+    "Coordination of internal and external teams (Content, social, media, IT, design, animation, production, and creatives)",
+    "Ensure all team members understand their roles and responsibilities",
+    "Hold status meetings and periodic follow-ups to ensure progress on active tickets or risk resolution",
+    "Provide clear guidance and direction to team members",
+    "Monitor project progress and make adjustments as necessary to ensure successful delivery within established timelines and budgets",
+    "Communicate project status, updates, and risks to stakeholders and management",
+    "Collaborate with multidisciplinary teams to ensure effective coordination of the project and alignment with organizational objectives",
+    "Foster a collaborative and positive work environment, promoting teamwork and mutual support",
+    "Implement best practices in project management, methodologies, and quality standards",
+    "Conduct post-project evaluations to identify areas for improvement"
+      ]
+    },
+
+    {
       "company": "BNN – THE DIGITAL PARTNER",
-      "period": "2022 - PRESENT",
+      "period": "2022 - 2024",
       "position": "PROJECT MANAGER",
       "activities": [
         "Coordination of media activities",
@@ -84,8 +105,29 @@ const experienceData = {
   ],
   es: [
     {
+  "company": "TEKNE",
+  "period": "2024-2025",
+  "position": "PROJECT MANAGER",
+  "activities": [
+    "Comunicación con stakeholders",
+    "Desarrollo de planes de tareas, incluyendo alcance, metas, entregables, cronogramas y presupuestos",
+    "Coordinar y gestionar los recursos para cada proyecto",
+    "Coordinación de equipos internos y externos (Content, social, medios, TI, diseño, animación, producción y creativos)",
+    "Asegurar que todos los miembros del equipo comprendan sus roles y responsabilidades",
+    "Realización de reuniones de estatus y seguimientos periódicos para asegurar el avance correcto de los tickets activos o resolución de riesgos",
+    "Proporcionar dirección clara y orientación a los miembros del equipo de proyecto",
+    "Supervisar el progreso del proyecto y realizar ajustes según sea necesario para garantizar la entrega exitosa dentro de los plazos y presupuestos establecidos",
+    "Comunicar el estado del proyecto, actualizaciones y riesgos a las partes interesadas y a la dirección",
+    "Colaborar con equipos multidisciplinarios para asegurar una coordinación efectiva del proyecto y su alineación con los objetivos organizacionales",
+    "Fomentar un entorno de trabajo colaborativo y positivo, promoviendo el trabajo en equipo y el apoyo mutuo",
+    "Implementar las mejores prácticas de gestión de proyectos, metodologías y estándares de calidad",
+    "Realizar evaluaciones posteriores al proyecto e identificar áreas de mejora"
+  ]
+},
+
+    {
       "company": "BNN – THE DIGITAL PARTNER",
-      "period": "2022 - PRESENTE",
+      "period": "2022 - 2024",
       "position": "PROJECT MANAGER",
       "activities": [
         "Coordinación de actividades de medios",
