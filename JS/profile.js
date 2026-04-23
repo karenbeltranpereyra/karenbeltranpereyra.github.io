@@ -1,42 +1,44 @@
-function generateProfileSection(language = 'es') {
-    const profileSectionContainer = document.getElementById('aboutme');
-    
-    const content = {
-        en: {
-            title: "Short facts about me",
-            loving: "LOVING",
-            lovingText: "Skating, listening to music, nature, traveling, dancing, and dedicating time to the important things and people in my life.",
-            socialProfiles: "SOCIAL PROFILES",
-            skills: "SKILLS",
-            contact: "CONTACT",
-            description: `I am an entrepreneurial and passionate individual who embraces challenges and perseveres. <br><br>
+function generateProfileSection(language = "es") {
+  const profileSectionContainer = document.getElementById("aboutme");
+
+  const content = {
+    en: {
+      title: "Short facts about me",
+      loving: "LOVING",
+      lovingText:
+        "Skating, listening to music, nature, traveling, dancing, and dedicating time to the important things and people in my life.",
+      socialProfiles: "SOCIAL PROFILES",
+      skills: "SKILLS",
+      contact: "CONTACT",
+      description: `I am an entrepreneurial and passionate individual who embraces challenges and perseveres. <br><br>
                           With a meticulous and self-taught approach, I am committed to continuous learning every day.<br><br>
                           Over the past 10 years, I have gained extensive experience in managing Digital Marketing, successfully
                           adapting to various brand projects under my direction. <br><br>
                           My primary goal is to achieve professional growth and evolution. <br><br>
                           I seek opportunities that align with this objective while ensuring that I fully support the company's goals.`,
-            signature: "Kind Regards,<br>Karen"
-        },
-        es: {
-            title: "Datos breves sobre mí",
-            loving: "ME GUSTA",
-            lovingText: "Patinar, escuchar música, la naturaleza, viajar, bailar y dedicarle tiempo a las cosas y personas importantes en mi vida",
-            socialProfiles: "REDES SOCIALES",
-            skills: "HABILIDADES",
-            contact: "CONTACTO",
-            description: `Soy una persona emprendedora y apasionada que enfrenta desafíos y persevera. <br><br>
+      signature: "Kind Regards,<br>Karen",
+    },
+    es: {
+      title: "Datos breves sobre mí",
+      loving: "ME GUSTA",
+      lovingText:
+        "Patinar, escuchar música, la naturaleza, viajar, bailar y dedicarle tiempo a las cosas y personas importantes en mi vida",
+      socialProfiles: "REDES SOCIALES",
+      skills: "HABILIDADES",
+      contact: "CONTACTO",
+      description: `Soy una persona emprendedora y apasionada que enfrenta desafíos y persevera. <br><br>
                           Con un enfoque meticuloso y autodidacta, me comprometo a aprender continuamente cada día.<br><br>
                           En los últimos 10 años, he adquirido una amplia experiencia en la gestión de Marketing Digital, adaptándome exitosamente
                           a varios proyectos de marcas bajo mi dirección. <br><br>
                           Mi objetivo principal es lograr el crecimiento y la evolución profesional. <br><br>
                           Busco oportunidades que se alineen con este objetivo mientras me aseguro de apoyar completamente los objetivos de la empresa.`,
-            signature: "Saludos cordiales,<br>Karen"
-        }
-    };
-    
-    const profileContent = content[language];
+      signature: "Saludos cordiales,<br>Karen",
+    },
+  };
 
-    const profileSection = `
+  const profileContent = content[language];
+
+  const profileSection = `
         <div class="profile-section">
             <div class="amcontent">
                 <div class="left-column">
@@ -54,28 +56,33 @@ function generateProfileSection(language = 'es') {
                     <section class="skills">
                         <h3>${profileContent.skills}</h3>
                         <div class="skill">
-                            <span>Analytics</span>
-                            <div class="bar">
-                                <div class="fill" style="width: 70%;"></div>
-                            </div>
+                            <span>Project Management (Agile/Scrum)</span>
+                            <div class="bar"><div class="fill" style="width: 90%;"></div></div>
                         </div>
+
                         <div class="skill">
-                            <span>CMS</span>
-                            <div class="bar">
-                                <div class="fill" style="width: 80%;"></div>
-                            </div>
+                            <span>Stakeholder & Team Coordination</span>
+                            <div class="bar"><div class="fill" style="width: 90%;"></div></div>
                         </div>
+
                         <div class="skill">
-                            <span>Social</span>
-                            <div class="bar">
-                                <div class="fill" style="width: 70%;"></div>
-                            </div>
+                            <span>Digital Campaigns & Performance</span>
+                            <div class="bar"><div class="fill" style="width: 85%;"></div></div>
                         </div>
+
                         <div class="skill">
-                            <span>Productivity</span>
-                            <div class="bar">
-                                <div class="fill" style="width: 80%;"></div>
-                            </div>
+                            <span>Data Analysis & Reporting</span>
+                            <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                        </div>
+
+                        <div class="skill">
+                            <span>Process Optimization</span>
+                            <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                        </div>
+
+                        <div class="skill">
+                            <span>Content & Production Management</span>
+                            <div class="bar"><div class="fill" style="width: 80%;"></div></div>
                         </div>
                     </section>
                     <section class="contact">
@@ -93,16 +100,19 @@ function generateProfileSection(language = 'es') {
         </div>
     `;
 
-    profileSectionContainer.innerHTML = profileSection;
+  profileSectionContainer.innerHTML = profileSection;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    generateProfileSection();
-    
-    document.getElementById('navbar-container').addEventListener('click', (event) => {
-        if (event.target.id === 'language-toggle') {
-            const newLanguage = event.target.textContent === 'Español' ? 'es' : 'en';
-            generateProfileSection(newLanguage);
-        }
+document.addEventListener("DOMContentLoaded", () => {
+  generateProfileSection();
+
+  document
+    .getElementById("navbar-container")
+    .addEventListener("click", (event) => {
+      if (event.target.id === "language-toggle") {
+        const newLanguage =
+          event.target.textContent === "Español" ? "es" : "en";
+        generateProfileSection(newLanguage);
+      }
     });
 });
