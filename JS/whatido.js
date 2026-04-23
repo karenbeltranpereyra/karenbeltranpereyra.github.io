@@ -82,7 +82,6 @@ function generateCardsHTML(language = 'es') {
     const container = document.getElementById('container');
     container.innerHTML = '';
     const selectedData = data[language];
-
     selectedData.forEach(item => {
         const card = document.createElement('div');
         card.classList.add('card');
@@ -94,16 +93,18 @@ function generateCardsHTML(language = 'es') {
         const title = document.createElement('h3');
         title.textContent = item.title;
 
-        const list = document.createElement('ul');
+        const content = document.createElement('div');
         item.content.forEach(text => {
-            const li = document.createElement('li');
-            li.textContent = text;
-            list.appendChild(li);
+            const p = document.createElement('p');
+            p.textContent = text;
+            content.appendChild(p);
+            const br = document.createElement('br');
+            content.appendChild(br);
         });
 
         card.appendChild(img);
         card.appendChild(title);
-        card.appendChild(list);
+        card.appendChild(content);
 
         container.appendChild(card);
     });
