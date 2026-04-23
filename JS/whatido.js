@@ -77,3 +77,46 @@ const data = {
     }
   ]
 };
+
+function generateCardsHTML(language = 'es') {
+    const container = document.getElementById('container');
+    container.innerHTML = '';
+    const selectedData = data[language];
+
+    selectedData.forEach(item => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        const img = document.createElement('img');
+        img.src = item.imageUrl;
+        img.alt = item.title;
+
+        const title = document.createElement('h3');
+        title.textContent = item.title;
+
+        const list = document.createElement('ul');
+        item.content.forEach(text => {
+            const li = document.createElement('li');
+            li.textContent = text;
+            list.appendChild(li);
+        });
+
+        card.appendChild(img);
+        card.appendChild(title);
+        card.appendChild(list);
+
+        container.appendChild(card);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    generateCardsHTML();
+
+
+    document.getElementById('navbar-container').addEventListener('click', (event) => {
+        if (event.target.id === 'language-toggle') {
+            const newLanguage = event.target.textContent === 'Español' ? 'es' : 'en';
+            generateCardsHTML(newLanguage);
+        }
+    });
+});
