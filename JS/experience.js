@@ -1,234 +1,191 @@
 const experienceData = {
   en: [
     {
-  "company": "TEKNE",
-  "period": "2024-2025",
-  "position": "PROJECT MANAGER",
-  "activities": [
-    "Communication with stakeholders",
-    "Development of task plans, including scope, goals, deliverables, timelines, and budgets",
-    "Coordinate and manage resources for each project",
-    "Coordination of internal and external teams (Content, social, media, IT, design, animation, production, and creatives)",
-    "Ensure all team members understand their roles and responsibilities",
-    "Hold status meetings and periodic follow-ups to ensure progress on active tickets or risk resolution",
-    "Provide clear guidance and direction to team members",
-    "Monitor project progress and make adjustments as necessary to ensure successful delivery within established timelines and budgets",
-    "Communicate project status, updates, and risks to stakeholders and management",
-    "Collaborate with multidisciplinary teams to ensure effective coordination of the project and alignment with organizational objectives",
-    "Foster a collaborative and positive work environment, promoting teamwork and mutual support",
-    "Implement best practices in project management, methodologies, and quality standards",
-    "Conduct post-project evaluations to identify areas for improvement"
+      company: "SELLGROW PROMOTIONS",
+      period: "NOV 2025 - FEB 2026",
+      position: "ACCOUNT EXECUTIVE | PROJECT MANAGER",
+      activities: [
+        "Led the Accounts team (2 account executives) under agile methodologies, ensuring objectives, timelines, and quality standards were met",
+        "Implemented agile methodologies to optimize processes and production",
+        "Ensured 95% of project deliverables for FRAICHE were completed on time and at the expected quality level",
+        "Coordinated communication and execution between clients and multidisciplinary teams (design, content, performance, UX/IT, Ads)",
+        "Planned, prioritized, and followed up on tasks to guarantee progress and schedule compliance",
+        "Reviewed and validated deliverables with a focus on quality and brand guidelines",
+        "Managed projects and accounts comprehensively, ensuring timelines, scope, and budget compliance",
+        "Implemented client-team communication processes that reduced rework and improved deliverable clarity"
       ]
     },
-
     {
-      "company": "BNN – THE DIGITAL PARTNER",
-      "period": "2022 - 2024",
-      "position": "PROJECT MANAGER",
-      "activities": [
-  "Communication with stakeholders",
-  "Management of simultaneous projects, including website developments",
-  "Development of project plans, including scope, goals, deliverables, timelines, and budgets",
-  "Coordinate and manage resources for each project",
-  "Coordination of internal and external teams (Content, social, media, IT, design, animation, production, and creatives)",
-  "Ensure all team members understand their roles and responsibilities",
-  "Conduct status meetings and periodic follow-ups to ensure progress on active tickets or risk resolution",
-  "Provide clear direction and guidance to team members",
-  "Monitor project progress and make adjustments as necessary to ensure successful delivery within established timelines and budgets",
-  "Communicate project status, updates, and risks to stakeholders and senior management",
-  "Collaborate with multidisciplinary teams to ensure effective project coordination and alignment with organizational objectives",
-  "Foster a collaborative and positive work environment, promoting teamwork and open communication",
-  "Ensure compliance with best practices in project management, methodologies, and quality standards",
-  "Conduct post-project evaluations to identify areas for improvement",
-  "Supplier management",
-  "Management of large and small productions",
-  "Development of quotations"
-]
-
+      company: "NATIVO",
+      period: "JUN 2025 - DIC 2025",
+      position: "ACCOUNT EXECUTIVE | PROJECT MANAGER",
+      activities: [
+        "Managed up to 10 simultaneous projects with over 90% compliance in timelines and quality",
+        "Coordinated effectively between clients and multidisciplinary teams (design, content, performance, UX/IT)",
+        "Planned, prioritized, and followed up on tasks to ensure continuous workflow and schedule compliance",
+        "Reviewed and validated deliverables, ensuring quality, consistency, and alignment with brand guidelines"
+      ]
     },
     {
-      "company": "COCO MARKETING",
-      "period": "2019-2022",
-      "position": "ACCOUNT EXECUTIVE | PROJECT MANAGER",
-      "activities": [
-  "Communication with stakeholders",
-  "Premium project management",
-  "Social media support",
-  "Content supervision",
-  "Style correction",
-  "Communication plans and strategies, as well as participation in their development",
-  "Management of recordings and editing",
-  "Management and follow-up of the development of small, medium, and large websites",
-  "Management and execution of mailings, as well as participation in the process",
-  "Direct interaction with clients",
-  "Organization and supervision of the agency's internal team",
-  "Supervision and activation of social media campaigns, Facebook Ads, Google AdWords",
-  "Decision-making, task schemes, timetable coordination with clients, internal teams, and solution implementation",
-  "Development of reports and analysis of metrics monthly or by project"
-]
-
+      company: "TEKNE",
+      period: "2024 - JUN 2025",
+      position: "ACCOUNT EXECUTIVE | PROJECT MANAGER",
+      activities: [
+        "Coordinated digital projects (web, content, and media), ensuring objective and timeline compliance",
+        "Supervised digital campaigns and collaborated directly with the performance team to optimize results",
+        "Planned, prioritized, and followed up on tasks to guarantee efficient workflows",
+        "Reviewed and validated deliverables with a focus on quality, consistency, and brand guidelines",
+        "Consolidated workflows between design, content, and performance, increasing team operational efficiency by 18%"
+      ]
     },
     {
-      "company": "LATENTE STUDIO",
-      "period": "2019",
-      "position": "ACCOUNT EXECUTIVE | PROJECT MANAGER",
-      "activities": [
-  "Media and social media positioning strategy",
-  "Coordination of media activity and advertising campaigns",
-  "Internal communication: text writing, style correction, and content design",
-  "Event organization (Conferences, workshops, presentations, etc.)",
-  "Social media updates and strategy: Adwords and Google Analytics",
-  "Design and publication of advertisements",
-  "Public relations",
-  "Organization and direction of photo and video shootings"
-]
+      company: "BNN",
+      period: "2022 - 2024",
+      position: "PROJECT MANAGER",
+      activities: [
+        "Managed content, web projects, digital campaigns, strategies, and audiovisual production",
+        "Coordinated internal and external teams, as well as suppliers and deliverables",
+        "Implemented agile methodologies to optimize processes and improve production",
+        "Managed 5 to 15 simultaneous projects with over 90% compliance in timelines and quality",
+        "Supervised digital campaigns and collaborated directly with performance teams to optimize results",
+        "Led high-impact projects for national brands, coordinating up to 10 multidisciplinary profiles",
+        "Reduced delivery times for Oxxo by 20% through the implementation of agile workflows",
+        "Implemented tracking and prioritization boards that reduced internal response times by 15%"
+      ]
     },
     {
-      "company": "PAUTA CREATIVA MARKETING AGENCY",
-      "period": "2018-2019",
-      "position": "COMMUNITY MANAGER",
-      "activities": [
-  "Media and social media positioning strategy",
-  "Coordination of media activity and advertising campaigns",
-  "Internal communication: text writing, style correction, content design",
-  "Event organization (Conferences, workshops, presentations, etc.)",
-  "Social media updates and strategy: Adwords and Google Analytics",
-  "Design and publication of advertisements",
-  "Public relations",
-  "Organization and direction of photo and video shootings"
-]
-
+      company: "COCO MARKETING",
+      period: "2019 - 2022",
+      position: "ACCOUNT EXECUTIVE | PROJECT MANAGER",
+      activities: [
+        "Managed premium projects, including website development, social media, and email marketing campaigns",
+        "Coordinated content, recording sessions, and production of digital materials",
+        "Analyzed metrics and prepared reports to optimize strategies and digital performance",
+        "Handled crisis management and digital reputation, ensuring timely communication aligned with brand guidelines",
+        "Optimized content strategies, improving organic performance by 30%"
+      ]
     },
     {
-      "company": "ROEL COMERCIALIZADORA",
-      "period": "2015-2017",
-      "position": "COMMUNITY MANAGER",
-      "activities": [
-  "Account management for clients such as Canson, Cretacolor, Milan, Acrilex, Pintart, Estambres Circulo, Indart, and Condor",
-  "Client follow-up",
-  "Creation and monitoring of advertising campaigns",
-  "Social media support",
-  "Generation of reports",
-  "Recording videos for content",
-  "Management and direction of online broadcasts"
-]
+      company: "PAUTA CREATIVA / LATENTE STUDIO",
+      period: "2018 - 2019",
+      position: "COMMUNITY MANAGER",
+      activities: [
+        "Executed social media strategies and continuously monitored digital performance",
+        "Coordinated campaigns and events, ensuring correct implementation and operational support",
+        "Produced visual content for different platforms and communication objectives",
+        "Monitored, followed up, and managed social media community interactions",
+        "Prepared performance reports to optimize strategies and content",
+        "Increased organic engagement by more than 20% through active monitoring and platform-specific content strategies"
+      ]
+    },
+    {
+      company: "ROEL COMERCIALIZADORA",
+      period: "2015 - 2017",
+      position: "COMMUNITY MANAGER",
+      activities: [
+        "Account management for clients such as Canson, Cretacolor, Milan, Acrilex, Pintart, Estambres Circulo, Indart, and Condor",
+        "Client follow-up",
+        "Creation and monitoring of advertising campaigns",
+        "Social media support",
+        "Report generation",
+        "Video recording for content",
+        "Management and direction of online broadcasts"
+      ]
     }
   ],
+
   es: [
     {
-  "company": "TEKNE",
-  "period": "2024-2025",
-  "position": "PROJECT MANAGER",
-  "activities": [
-    "Comunicación con stakeholders",
-    "Desarrollo de planes de tareas, incluyendo alcance, metas, entregables, cronogramas y presupuestos",
-    "Coordinar y gestionar los recursos para cada proyecto",
-    "Coordinación de equipos internos y externos (Content, social, medios, TI, diseño, animación, producción y creativos)",
-    "Asegurar que todos los miembros del equipo comprendan sus roles y responsabilidades",
-    "Realización de reuniones de estatus y seguimientos periódicos para asegurar el avance correcto de los tickets activos o resolución de riesgos",
-    "Proporcionar dirección clara y orientación a los miembros del equipo de proyecto",
-    "Supervisar el progreso del proyecto y realizar ajustes según sea necesario para garantizar la entrega exitosa dentro de los plazos y presupuestos establecidos",
-    "Comunicar el estado del proyecto, actualizaciones y riesgos a las partes interesadas y a la dirección",
-    "Colaborar con equipos multidisciplinarios para asegurar una coordinación efectiva del proyecto y su alineación con los objetivos organizacionales",
-    "Fomentar un entorno de trabajo colaborativo y positivo, promoviendo el trabajo en equipo y el apoyo mutuo",
-    "Implementar las mejores prácticas de gestión de proyectos, metodologías y estándares de calidad",
-    "Realizar evaluaciones posteriores al proyecto e identificar áreas de mejora"
-  ]
-},
-
-    {
-      "company": "BNN – THE DIGITAL PARTNER",
-      "period": "2022 - 2024",
-      "position": "PROJECT MANAGER",
-      "activities": [
-  "Comunicación con stakeholders",
-  "Manejo de proyectos en simultáneo, incluyendo desarrollos de sitio web",
-  "Desarrollo de planes de proyecto, incluyendo alcance, metas, entregables, cronogramas y presupuestos",
-  "Coordinar y gestionar los recursos para cada proyecto",
-  "Coordinación de equipos internos y externos (Content, social, medios, TI, diseño, animación, producción y creativos)",
-  "Asegurar que todos los miembros del equipo comprendan sus roles y responsabilidades",
-  "Realización de reuniones de estatus y seguimientos periódicos para asegurar el avance correcto de los tickets activos o resolución de riesgos",
-  "Proporcionar dirección clara y orientación a los miembros del equipo de proyecto",
-  "Supervisar el progreso del proyecto y realizar ajustes según sea necesario para garantizar la entrega exitosa dentro de los plazos y presupuestos establecidos",
-  "Comunicar el estado del proyecto, actualizaciones y riesgos a las partes interesadas y a la alta dirección",
-  "Colaborar con equipos multidisciplinarios para asegurar una coordinación efectiva del proyecto y su alineación con los objetivos organizacionales",
-  "Fomentar un entorno de trabajo colaborativo y positivo, promoviendo el trabajo en equipo y la comunicación abierta",
-  "Garantizar el cumplimiento de las mejores prácticas de gestión de proyectos, metodologías y estándares de calidad",
-  "Realizar evaluaciones posteriores al proyecto e identificar áreas de mejora",
-  "Gestión de proveedores",
-  "Gestión de producciones grandes y pequeñas",
-  "Desarrollo de cotizaciones"
-]
-
+      company: "SELLGROW PROMOTIONS",
+      period: "NOV 2025 - FEB 2026",
+      position: "EJECUTIVA DE CUENTA | PROJECT MANAGER",
+      activities: [
+        "Lideré al equipo de Cuentas (2 ejecutivas) bajo metodologías ágiles, asegurando cumplimiento de objetivos, tiempos y calidad",
+        "Implementé metodologías ágiles para optimizar procesos y producción",
+        "Aseguré el cumplimiento del 95% de entregables del proyecto FRAICHE dentro de tiempo y calidad esperada",
+        "Coordiné la comunicación y ejecución entre clientes y equipos multidisciplinarios (diseño, contenido, performance, UX/TI, Ads)",
+        "Planeé, prioricé y di seguimiento a tareas para garantizar avance y cumplimiento de cronogramas",
+        "Revisé y validé entregables con enfoque en calidad y lineamientos de marca",
+        "Gestioné de forma integral proyectos y cuentas, asegurando cumplimiento de tiempos, alcance y presupuesto",
+        "Implementé procesos de comunicación cliente-equipo que redujeron retrabajos y aumentaron claridad de entregables"
+      ]
     },
     {
-      "company": "COCO MARKETING",
-      "period": "2019-2022",
-      "position": "EJECUTIVO DE CUENTAS | PROJECT MANAGER",
-      "activities": [
-  "Comunicación con stakeholders",
-  "Gestión de proyectos premium",
-  "Contención de RR. SS.",
-  "Supervisión de contenidos",
-  "Corrección de estilo",
-  "Planes de comunicación y estrategias así como participación en la elaboración de los mismos",
-  "Gestión de grabaciones y ediciones",
-  "Gestión y seguimiento del desarrollo de sitios web, pequeños, medianos y grandes",
-  "Gestión de envíos de mailings así como participación en el proceso",
-  "Trato directo con el cliente",
-  "Organización y supervisión de equipo interno de la agencia",
-  "Supervisión y activación de campañas en redes sociales, Facebook Ads, Google AdWords",
-  "Toma de decisiones, esquemas de tareas, timetable con el cliente, el equipo interno e implementación de soluciones",
-  "Desarrollo de reportes y análisis de métricas mensuales o por proyecto"
-]
-
+      company: "NATIVO",
+      period: "JUN 2025 - DIC 2025",
+      position: "EJECUTIVA DE CUENTA | PROJECT MANAGER",
+      activities: [
+        "Gestioné simultáneamente hasta 10 proyectos con cumplimiento superior al 90% en tiempos y calidad",
+        "Coordinación efectiva entre clientes y equipos multidisciplinarios (diseño, contenido, performance, UX/TI)",
+        "Planeación, priorización y seguimiento de tareas para asegurar flujo continuo y cumplimiento de cronogramas",
+        "Revisión y validación de entregables, asegurando calidad, consistencia y alineación a lineamientos de marca"
+      ]
     },
     {
-      "company": "LATENTE STUDIO",
-      "period": "2019",
-      "position": "EJECUTIVO DE CUENTAS | PROJECT MANAGER",
-      "activities": [
-  "Estrategia de posicionamiento en medios y RR. SS.",
-  "Coordinación de actividad en medios y pauta publicitaria",
-  "Comunicación interna: redacción de textos, corrección de estilo y diseño de contenido",
-  "Organización de eventos (Conferencias, talleres, presentaciones, etc.)",
-  "Actualización y estrategia en Social Media: Adwords y Google Analytics",
-  "Diseño y publicación de anuncios",
-  "Relaciones públicas",
-  "Organización y dirección de shootings"
-]
-
-
+      company: "TEKNE",
+      period: "2024 - JUN 2025",
+      position: "EJECUTIVA DE CUENTA | PROJECT MANAGER",
+      activities: [
+        "Coordinación integral de proyectos digitales (web, contenido y pauta), asegurando cumplimiento de objetivos y tiempos",
+        "Supervisión de campañas digitales y colaboración directa con el equipo de performance para optimizar resultados",
+        "Planeación, priorización y seguimiento de tareas para garantizar flujos de trabajo eficientes",
+        "Revisión y validación de entregables con enfoque en calidad, consistencia y lineamientos de marca",
+        "Consolidé procesos de trabajo entre diseño, contenido y performance, incrementando la eficiencia operativa del equipo en un 18%"
+      ]
     },
     {
-      "company": "PAUTA CREATIVA AGENCIA DE MARKETING",
-      "period": "2018-2019",
-      "position": "COMMUNITY MANAGER",
-      "activities": [
-  "Estrategia de posicionamiento en medios y RR. SS.",
-  "Coordinación de actividad en medios y pauta publicitaria",
-  "Comunicación interna: redacción de textos, corrección de estilo, diseño de contenido",
-  "Organización de eventos (Conferencias, talleres, presentaciones, etc.)",
-  "Actualización y estrategia en Social Media: Adwords y Google Analytics",
-  "Diseño y publicación de anuncios",
-  "Relaciones Públicas",
-  "Organización y dirección de shootings"
-]
-
+      company: "BNN",
+      period: "2022 - 2024",
+      position: "PROJECT MANAGER",
+      activities: [
+        "Gestión de contenidos, proyectos web, campañas digitales, estrategias y producción audiovisual",
+        "Coordinación de equipos internos y externos, así como supervisión de proveedores y entregables",
+        "Implementación de metodologías ágiles para optimizar procesos y mejorar la producción",
+        "Gestión simultánea de 5 a 15 proyectos, con cumplimiento superior al 90% en tiempos y calidad",
+        "Supervisión de campañas digitales y colaboración directa con performance para optimizar resultados",
+        "Lideré proyectos de alto impacto para marcas nacionales, coordinando hasta 10 perfiles multidisciplinarios",
+        "Reducción del 20% en tiempos de entrega para Oxxo mediante la implementación de flujos ágiles",
+        "Implementé tableros de seguimiento y priorización que redujeron tiempos de respuesta internos en un 15%"
+      ]
     },
     {
-      "company": "ROEL COMERCIALIZADORA",
-      "period": "2015-2017",
-      "position": "COMMUNITY MANAGER",
-      "activities": [
-  "Gestión de cuentas como Canson, Cretacolor, Milan, Acrilex, Pintart, Estambres Circulo, Indart, Condor",
-  "Seguimiento a cliente",
-  "Creación y monitoreo de campañas publicitarias",
-  "Contención de RR. SS.",
-  "Generación de reportes",
-  "Grabación de vídeos para contenidos",
-  "Gestión y dirección de transmisión online"
-]
+      company: "COCO MARKETING",
+      period: "2019 - 2022",
+      position: "EJECUTIVA DE CUENTA | PROJECT MANAGER",
+      activities: [
+        "Gestión de proyectos premium, incluyendo desarrollo de sitios web, redes sociales y campañas de email marketing",
+        "Coordinación de contenidos, sesiones de grabación y producción de materiales digitales",
+        "Análisis de métricas y elaboración de reportes para optimizar estrategias y desempeño digital",
+        "Gestión de crisis y reputación digital, asegurando comunicación oportuna y alineada a los lineamientos de marca",
+        "Optimicé estrategias de contenido mejorando el desempeño orgánico en un 30%"
+      ]
+    },
+    {
+      company: "PAUTA CREATIVA / LATENTE STUDIO",
+      period: "2018 - 2019",
+      position: "COMMUNITY MANAGER",
+      activities: [
+        "Ejecución de estrategias en redes sociales y seguimiento continuo del desempeño digital",
+        "Coordinación de campañas y eventos, asegurando correcta implementación y apoyo operativo",
+        "Producción de contenido visual para diferentes plataformas y objetivos de comunicación",
+        "Monitoreo, seguimiento y contención en redes sociales para gestión de comunidad",
+        "Elaboración de reportes de desempeño para optimizar estrategias y contenidos",
+        "Incrementé el engagement orgánico en más de 20% mediante monitoreo activo y estrategias de contenido específicas por plataforma"
+      ]
+    },
+    {
+      company: "ROEL COMERCIALIZADORA",
+      period: "2015 - 2017",
+      position: "COMMUNITY MANAGER",
+      activities: [
+        "Gestión de cuentas como Canson, Cretacolor, Milan, Acrilex, Pintart, Estambres Circulo, Indart y Condor",
+        "Seguimiento a cliente",
+        "Creación y monitoreo de campañas publicitarias",
+        "Contención de RR. SS.",
+        "Generación de reportes",
+        "Grabación de videos para contenidos",
+        "Gestión y dirección de transmisión online"
+      ]
     }
   ]
 };
